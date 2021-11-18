@@ -74,7 +74,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hey there! My name is Group Menter.
+Hey there! My name is PIKACHU.
 I'm here to help you manage your groups!
 
 Hit /help to find out more about how to use me to my full potential.
@@ -83,11 +83,11 @@ Hit /help to find out more about how to use me to my full potential.
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD TO YOUR GROUP ➕️", url="https://t.me/GroupMenterRobot?startgroup=true"),
+            text="➕️ ADD TO YOUR GROUP ➕️", url="https://t.me/HG_PIKACHU_BOT?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="Updates", url="https://t.me/GroupMenterUpdates"),
-        InlineKeyboardButton(text="Support", url="https://t.me/GroupMenterGroup"),
+        InlineKeyboardButton(text="Updates", url="https://t.me/hgbotsupportchannel"),
+        InlineKeyboardButton(text="Support", url="https://t.me/hgvideobotsupportgroup"),
     ],
     [
         InlineKeyboardButton(
@@ -98,7 +98,7 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey There! My name is Group Menter.
+Hey There! My name is PIKACHU.
 I'm here to help you manage your groups!
 
 Commands available:
@@ -361,7 +361,7 @@ def groupmenter_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "groupmenter":
         query.message.edit_text(
-            text=""" 🤖 I'm *Group Menter*, a powerful group management bot built to help you manage your group easily.
+            text=""" 🤖 I'm *PIKACHU*, a powerful group management bot built to help you manage your group easily.
                  
 ❍ I can restrict users.
                  
@@ -374,9 +374,9 @@ def groupmenter_about_callback(update: Update, context: CallbackContext):
 ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  
 ❍ I check for admins' permissions before executing any command and more stuffs
-                 \n_Group Menter's licensed under the GNU General Public License v3.0_
-                 Here is the [💾Repository](https://github.com/TeamGroupMenter/GroupMenter).
-                 If you have any question about Group Menter, let us know at @GroupMenterUpdates.""",
+                 \n_PIKACHU's licensed under the GNU General Public License v3.0_
+                 Here is the [💾Repository](https://t.me/hgvideobotsupportgroup).
+                 If you have any question about PIKACHU, let us know at @hgbotsupportchannel.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -402,8 +402,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *Group Menter*
-                 \nHere is the [Source Code](https://github.com/TeamGroupMenter/GroupMenter) .""",
+            text=""" Hi..🤗 I'm *PIKACHU*
+                 \nHere is the [Source Code](https://t.me/hgvideobotsupportgroup) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
